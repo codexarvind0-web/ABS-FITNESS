@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABS FITNESS | Unisex Gym, Gorewada Ring Road, Nagpur</title>
+<meta name="description" content="ABS FITNESS - Premium unisex gym in Nagpur. Open 24 hours. Strength training, cardio, personal training, yoga, zumba, crossfit, steam bath and more.">
+<link rel="icon" href="file_0000000089388211b43997f8ed700363.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FFD60A;--y2:#ffb800;--bg:#070707;--card:#121212;--line:#262626;--txt:#e9e9e9;--mut:#9a9a9a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--txt);overflow-x:hidden;line-height:1.6}
+h1,h2,h3,.logo-text{font-family:'Bebas Neue',sans-serif;letter-spacing:1.5px;font-weight:400}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+section{padding:90px 6%}
+.tag{color:var(--y);font-size:13px;letter-spacing:5px;text-transform:uppercase;text-align:center;font-weight:600;text-shadow:0 0 18px rgba(255,214,10,.45)}
+.title{font-size:clamp(38px,6vw,60px);text-align:center;margin:4px 0 50px;color:#fff;letter-spacing:3px;text-shadow:0 4px 24px rgba(0,0,0,.6)}
+.title::after{content:"";display:block;width:90px;height:4px;margin:12px auto 0;border-radius:4px;background:linear-gradient(90deg,transparent,var(--y),transparent);box-shadow:0 0 16px rgba(255,214,10,.6)}
+.title span,.hl{color:var(--y);text-shadow:0 0 28px rgba(255,214,10,.4)}
+
+/* ===== STYLISH BUTTONS ===== */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;padding:15px 36px;border-radius:50px;font-weight:600;letter-spacing:2px;font-size:13px;text-transform:uppercase;cursor:pointer;border:2px solid transparent;overflow:hidden;transition:.35s;margin:6px 8px 6px 0;font-family:'Poppins',sans-serif}
+.btn::before{content:"";position:absolute;top:0;left:-130%;width:55%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-22deg);transition:.8s}
+.btn:hover::before{left:150%}
+.btn::after{content:"→";display:inline-block;width:0;opacity:0;margin-left:0;transition:.35s;font-size:16px}
+.btn:hover::after{width:20px;opacity:1;margin-left:8px}
+.btn:active{transform:scale(.95)!important}
+.btn-y{background:linear-gradient(135deg,#FFE94D,#FFB800);color:#000;box-shadow:0 8px 25px rgba(255,214,10,.3)}
+.btn-y:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 14px 38px rgba(255,214,10,.5)}
+.btn-o{color:var(--y);background:rgba(255,214,10,.06);border-color:var(--y)}
+.btn-o:hover{background:linear-gradient(135deg,#FFE94D,#FFB800);color:#000;transform:translateY(-4px) scale(1.04);box-shadow:0 14px 38px rgba(255,214,10,.4)}
+.btn-wa{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;box-shadow:0 8px 25px rgba(37,211,102,.3)}
+.btn-wa:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 14px 38px rgba(37,211,102,.5)}
+.btn-ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;box-shadow:0 8px 25px rgba(220,39,67,.3)}
+.btn-ig:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 14px 38px rgba(220,39,67,.5)}
+.btns-row{display:flex;flex-wrap:wrap;margin-top:10px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;width:100%;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:14px 6%;transition:.4s}
+nav.scrolled{background:rgba(7,7,7,.92);backdrop-filter:blur(10px);padding:9px 6%;border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{height:52px;width:52px;object-fit:contain;border-radius:50%}
+.logo-text{font-size:28px;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.logo-text b{color:var(--y);font-weight:400}
+.menu{display:flex;gap:30px;list-style:none;align-items:center}
+.menu a{font-size:13px;letter-spacing:2px;font-weight:500;transition:.3s;position:relative;text-shadow:0 2px 10px rgba(0,0,0,.8)}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--y);transition:.3s}
+.menu a:not(.btn):hover{color:var(--y)}
+.menu a:not(.btn):hover::after{width:100%}
+.menu .btn{padding:10px 24px;font-size:12px;color:#000;margin:0;text-shadow:none}
+.menu .btn::after{display:none}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:101}
+.burger span{width:28px;height:3px;background:var(--y);transition:.3s}
+
+/* HERO (photo saaf dikhegi, text stylish) */
+#home{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;
+background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.6)),url('IMG-20261121-WA0013.jpg') center/cover fixed}
+#home::after{content:"";position:absolute;bottom:0;left:0;width:100%;height:140px;background:linear-gradient(transparent,var(--bg))}
+.hero{position:relative;z-index:2;max-width:900px;padding-top:70px}
+.hero .sub{display:inline-block;color:var(--y);letter-spacing:7px;font-size:13px;font-weight:600;margin-bottom:14px;padding:6px 20px;border-radius:30px;background:rgba(0,0,0,.45);backdrop-filter:blur(4px);border:1px solid rgba(255,214,10,.35);text-shadow:0 0 14px rgba(255,214,10,.6);animation:up 1s both}
+.hero h1{font-size:clamp(70px,14vw,160px);line-height:.95;letter-spacing:4px;animation:up 1s .2s both}
+.hero h1 .abs{display:inline-block;color:#fff;text-shadow:0 0 25px rgba(255,255,255,.35),0 6px 30px rgba(0,0,0,.85)}
+.hero h1 .fit{display:inline-block;background:linear-gradient(90deg,#FFE94D,#FFB800,#FFF6B0,#FFB800,#FFE94D);background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:shine 4s linear infinite;filter:drop-shadow(0 4px 18px rgba(0,0,0,.75)) drop-shadow(0 0 22px rgba(255,214,10,.35))}
+.hero .tagline{display:flex;align-items:center;justify-content:center;gap:14px;font-size:clamp(14px,2.4vw,22px);margin:20px 0 14px;letter-spacing:4px;font-weight:600;color:#fff;text-shadow:0 3px 16px rgba(0,0,0,.9);animation:up 1s .4s both}
+.hero .tagline::before,.hero .tagline::after{content:"";height:2px;width:clamp(24px,7vw,70px);background:linear-gradient(90deg,transparent,var(--y));border-radius:2px}
+.hero .tagline::after{background:linear-gradient(90deg,var(--y),transparent)}
+.hero p.desc{color:#e6e6e6;max-width:600px;margin:0 auto 34px;font-size:15px;text-shadow:0 2px 14px rgba(0,0,0,.95);animation:up 1s .5s both}
+.hero .open{display:inline-block;border:1px solid var(--y);color:var(--y);background:rgba(0,0,0,.45);padding:6px 22px;border-radius:30px;font-size:12px;font-weight:600;letter-spacing:4px;margin-bottom:22px;box-shadow:0 0 22px rgba(255,214,10,.3);animation:up 1s .55s both,glow 2.5s ease-in-out infinite}
+.hero .btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;animation:up 1s .7s both}
+.hero .btns .btn{margin:6px}
+@keyframes up{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes shine{to{background-position:220% center}}
+@keyframes glow{0%,100%{box-shadow:0 0 14px rgba(255,214,10,.25)}50%{box-shadow:0 0 30px rgba(255,214,10,.6)}}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:0 6%;margin-top:-30px;position:relative;z-index:5}
+.stat{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--y);padding:26px 10px;text-align:center;border-radius:6px}
+.stat h3{font-size:42px;color:var(--y);text-shadow:0 0 20px rgba(255,214,10,.3)}
+.stat p{font-size:12px;letter-spacing:2px;color:var(--mut);text-transform:uppercase}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1200px;margin:auto}
+.about-img{position:relative}
+.about-img img{border-radius:8px;width:100%;height:520px;object-fit:cover;border:1px solid var(--line)}
+.about-img::before{content:"";position:absolute;top:-16px;left:-16px;width:60%;height:60%;border-top:4px solid var(--y);border-left:4px solid var(--y);border-radius:8px 0 0 0}
+.about-img::after{content:"";position:absolute;bottom:-16px;right:-16px;width:60%;height:60%;border-bottom:4px solid var(--y);border-right:4px solid var(--y);border-radius:0 0 8px 0}
+.about-txt .tag,.about-txt .title{text-align:left}
+.about-txt .title{margin-bottom:20px}
+.about-txt .title::after{margin-left:0;background:linear-gradient(90deg,var(--y),transparent)}
+.about-txt p{color:var(--mut);margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 28px}
+.chips span{border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:30px;font-size:12px;letter-spacing:1px;transition:.3s}
+.chips span:hover{border-color:var(--y);color:var(--y);box-shadow:0 0 14px rgba(255,214,10,.25)}
+
+/* TRAINERS */
+#trainers{background:#0b0b0b}
+.tr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;max-width:1200px;margin:auto}
+.tr-card{position:relative;aspect-ratio:1/1;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#111;transition:.45s}
+.tr-card .ph{position:absolute;inset:0;overflow:hidden;transition:.7s}
+.tr-card .ph img{width:100%;height:100%;max-width:none;object-fit:cover;transform:scale(1.22);transform-origin:50% 45%}
+.tr-card:hover{transform:translateY(-8px);border-color:var(--y);box-shadow:0 18px 45px rgba(255,214,10,.15)}
+.tr-card:hover .ph{transform:scale(1.07)}
+.tr-card .info{position:absolute;inset:auto 0 0 0;padding:70px 18px 16px;background:linear-gradient(transparent,rgba(0,0,0,.96));border-bottom:4px solid var(--y);z-index:2}
+.tr-card h3{font-size:30px;color:#fff;line-height:1.1;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.tr-card .role{color:var(--y);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:500}
+.tr-card .miss{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px;font-size:12px;color:var(--mut);word-break:break-all;background:#111}
+.tr-card .miss b{color:var(--y);font-size:13px;margin-bottom:6px}
+.tr-card .initial{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:130px;color:var(--y);background:linear-gradient(#1a1a1a,#000)}
+
+/* EQUIPMENT */
+.eq{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;max-width:1200px;margin:auto}
+.eq-item{position:relative;border-radius:8px;overflow:hidden;height:320px;border:1px solid var(--line);cursor:pointer}
+.eq-item img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.eq-item:hover img{transform:scale(1.1)}
+.eq-item div{position:absolute;inset:auto 0 0 0;padding:50px 20px 18px;background:linear-gradient(transparent,rgba(0,0,0,.95))}
+.eq-item h3{font-size:26px;color:var(--y);text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.eq-item p{font-size:13px;color:#ccc}
+
+/* GALLERY */
+#gallery{background:#0b0b0b}
+.gal{columns:3 280px;column-gap:16px;max-width:1200px;margin:auto}
+.gal img{width:100%;margin-bottom:16px;border-radius:8px;border:1px solid var(--line);cursor:pointer;transition:.4s;break-inside:avoid}
+.gal img:hover{transform:scale(1.02);border-color:var(--y);filter:brightness(1.15)}
+.gal .rotbox{position:relative;aspect-ratio:16/9;overflow:hidden;margin-bottom:16px;border-radius:8px;border:1px solid var(--line);break-inside:avoid;cursor:pointer}
+.gal .rotbox img{position:absolute;top:50%;left:50%;width:56.25%;height:auto;max-width:none;margin:0;border:none;border-radius:0;transform:translate(-50%,-50%) rotate(-90deg)}
+.gal .rotbox img:hover{transform:translate(-50%,-50%) rotate(-90deg) scale(1.05)}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.95);display:none;align-items:center;justify-content:center;z-index:200;padding:20px}
+.lb.on{display:flex}
+.lb img{max-height:90vh;max-width:95vw;border-radius:6px;border:2px solid var(--y)}
+.lb img.r{transform:rotate(-90deg);max-width:88vh;max-height:92vw}
+.lb span{position:absolute;top:18px;right:28px;font-size:44px;color:var(--y);cursor:pointer;z-index:2}
+
+/* PLANS */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;max-width:1100px;margin:auto}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:40px 30px;text-align:center;transition:.4s;position:relative}
+.plan:hover{transform:translateY(-8px);border-color:var(--y)}
+.plan.pop{border:2px solid var(--y);background:linear-gradient(180deg,#1a1700,var(--card))}
+.plan.pop::before{content:"MOST POPULAR";position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--y);color:#000;font-size:11px;font-weight:600;padding:4px 16px;border-radius:20px;letter-spacing:2px}
+.plan h3{font-size:30px;color:#fff}
+.price{font-family:'Bebas Neue';font-size:56px;color:var(--y);margin:6px 0 16px;text-shadow:0 0 22px rgba(255,214,10,.3)}
+.plan ul{list-style:none;margin-bottom:28px;color:var(--mut)}
+.plan li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.plan li::before{content:"✔ ";color:var(--y)}
+.plan .btn{margin:0}
+.note{text-align:center;color:var(--mut);font-size:13px;margin-top:26px}
+
+/* CTA */
+.cta{text-align:center;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),url('IMG-20261121-WA0016.jpg') center/cover fixed;padding:110px 6%}
+.cta h2{font-size:clamp(40px,7vw,78px);color:#fff;letter-spacing:3px;text-shadow:0 4px 24px rgba(0,0,0,.8)}
+.cta p{color:#ddd;margin:6px 0 30px;text-shadow:0 2px 12px rgba(0,0,0,.9)}
+
+/* CONTACT */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;max-width:1200px;margin:auto}
+.c-box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:24px;margin-bottom:18px;display:flex;gap:16px;align-items:flex-start;transition:.3s}
+a.c-box:hover{border-color:var(--y);transform:translateX(6px)}
+.c-box .ic{font-size:30px}
+.c-box h4{color:var(--y);font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:500}
+.c-box p{color:#ddd;font-size:15px}
+.map{border-radius:8px;overflow:hidden;border:2px solid var(--y);min-height:420px}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.6) invert(.92) contrast(.9)}
+
+/* FOOTER */
+footer{background:#000;text-align:center;padding:40px 6% 30px;border-top:1px solid var(--line)}
+footer img{height:70px;margin:0 auto 10px;border-radius:50%}
+footer .t{font-family:'Bebas Neue';font-size:22px;letter-spacing:3px;color:var(--y)}
+footer p{color:var(--mut);font-size:13px;margin-top:6px}
+footer .btns-row{justify-content:center;margin-top:16px}
+
+/* WHATSAPP FLOAT */
+.wa{position:fixed;bottom:22px;right:22px;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128C7E);display:flex;align-items:center;justify-content:center;font-size:30px;z-index:90;box-shadow:0 6px 24px rgba(37,211,102,.5);animation:pulse 2s infinite;transition:.3s}
+.wa:hover{transform:scale(1.12) rotate(8deg)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(50px);transition:1s}
+.rv.show{opacity:1;transform:none}
+
+/* MOBILE */
+@media(max-width:900px){
+ .burger{display:flex}
+ .menu{position:fixed;top:0;right:-100%;width:75%;height:100vh;background:#0a0a0a;flex-direction:column;justify-content:center;gap:28px;transition:.5s;border-left:2px solid var(--y)}
+ .menu.open{right:0}
+ .about,.contact{grid-template-columns:1fr}
+ .about-img img{height:340px}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .tr-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+ .tr-card h3{font-size:22px}
+ .tr-card .initial{font-size:90px}
+ .hero h1 .abs,.hero h1 .fit{display:block}
+ .hero .sub{letter-spacing:4px;font-size:11px}
+ section{padding:70px 5%}
+ #home,.cta{background-attachment:scroll}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="nav">
+  <a href="#home" class="logo">
+    <img src="file_0000000089388211b43997f8ed700363.png" alt="ABS Fitness Logo">
+    <span class="logo-text">ABS <b>FITNESS</b></span>
+  </a>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  <ul class="menu" id="menu">
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#trainers">TRAINERS</a></li>
+    <li><a href="#equipment">EQUIPMENT</a></li>
+    <li><a href="#gallery">GALLERY</a></li>
+    <li><a href="#plans">PLANS</a></li>
+    <li><a href="#contact" class="btn btn-y">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <div class="hero">
+    <p class="sub">UNISEX GYM • NAGPUR</p>
+    <h1><span class="abs">ABS</span> <span class="fit">FITNESS</span></h1>
+    <p class="tagline">BUILD STRENGTH. BUILD CONFIDENCE. 💪</p>
+    <div class="open">🕐 OPEN 24 HOURS</div>
+    <p class="desc">Premium gym with modern equipment, expert guidance and a motivating environment for both ladies and gents.</p>
+    <div class="btns">
+      <a href="#" data-wa="Hi ABS Fitness, I want to join the gym" class="btn btn-y">JOIN NOW</a>
+      <a href="#trainers" class="btn btn-o">MEET TRAINERS</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats rv">
+  <div class="stat"><h3>24/7</h3><p>Open Hours</p></div>
+  <div class="stat"><h3>Ladies &amp; Gents</h3><p>Unisex Gym</p></div>
+  <div class="stat"><h3>100%</h3><p>Modern Equipment</p></div>
+  <div class="stat"><h3>1-on-1</h3><p>Personal Training</p></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about">
+    <div class="about-img rv"><img src="IMG-20261121-WA0020.jpg" alt="ABS Fitness Gym Building"></div>
+    <div class="about-txt rv">
+      <p class="tag">ABOUT US</p>
+      <h2 class="title">TRAIN HARD. <span>STAY STRONG.</span></h2>
+      <p>ABS FITNESS Gorewada Ring Road, Nagpur ka ek premium unisex gym hai, jahan har fitness level ke log apne goals achieve kar sakte hain.</p>
+      <p>Strength training se lekar cardio, yoga, zumba, kick boxing aur crossfit tak, sab kuch ek hi jagah. Saath hai separate changing rooms, shower aur steam bath ki facility.</p>
+      <div class="chips">
+        <span>🏋️ Strength Training</span><span>🏃 Cardio</span><span>💪 Weight Training</span>
+        <span>⚡ Personal Training</span><span>👫 Ladies &amp; Gents</span><span>🧘 Yoga</span>
+        <span>💃 Zumba</span><span>🥊 Kick Boxing</span><span>🔥 Functional Training</span>
+        <span>🏆 CrossFit</span><span>♨️ Steam Bath</span><span>🚿 Shower</span><span>🚪 Changing Rooms</span>
+      </div>
+      <a href="#" data-wa="Hi ABS Fitness, I want to join the gym" class="btn btn-y">JOIN NOW</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS (JS se bante hain, list neeche script mein hai) -->
+<section id="trainers">
+  <p class="tag">EXPERT GUIDANCE</p>
+  <h2 class="title">MEET OUR <span>TRAINERS</span></h2>
+  <div class="tr-grid" id="trGrid"></div>
+</section>
+
+<!-- EQUIPMENT -->
+<section id="equipment">
+  <p class="tag">TRAIN WITH THE BEST</p>
+  <h2 class="title">GYM <span>EQUIPMENT</span></h2>
+  <div class="eq">
+    <div class="eq-item rv"><img src="IMG-20261121-WA0018.jpg" alt="Treadmills"><div><h3>Treadmills</h3><p>Premium running machines for every level.</p></div></div>
+    <div class="eq-item rv"><img src="IMG-20261121-WA0017.jpg" alt="Elliptical Machines"><div><h3>Elliptical / Cardio</h3><p>Low-impact cardio for stamina and fat loss.</p></div></div>
+    <div class="eq-item rv"><img src="IMG-20261121-WA0013.jpg" alt="Weight Machines"><div><h3>Weight Machines</h3><p>Safe and guided muscle training machines.</p></div></div>
+    <div class="eq-item rv"><img src="IMG-20261121-WA0016.jpg" alt="Benches and Dumbbells"><div><h3>Benches &amp; Dumbbells</h3><p>Full dumbbell rack with adjustable benches.</p></div></div>
+    <div class="eq-item rv"><img src="IMG-20261121-WA0015.jpg" alt="Power Rack"><div><h3>Strength Equipment</h3><p>Power rack, Smith machine and barbells.</p></div></div>
+    <div class="eq-item rv"><img src="IMG-20261121-WA0012.jpg" alt="Leg Press"><div><h3>Leg Training</h3><p>Leg press and lower body machines.</p></div></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <p class="tag">INSIDE ABS FITNESS</p>
+  <h2 class="title">GYM <span>GALLERY</span></h2>
+  <div class="gal">
+    <img class="rv" src="IMG-20261121-WA0020.jpg" alt="Gym Exterior">
+    <img class="rv" src="IMG-20261121-WA0016.jpg" alt="Gym Interior">
+    <div class="rotbox rv"><img src="IMG-20261121-WA0019.jpg" alt="Dumbbell Rack"></div>
+    <img class="rv" src="IMG-20261121-WA0017.jpg" alt="Cardio Area">
+    <img class="rv" src="IMG-20261121-WA0014.jpg" alt="Weight Machines">
+    <img class="rv" src="IMG-20261121-WA0018.jpg" alt="Treadmill Zone">
+    <div class="rotbox rv"><img src="IMG-20261121-WA0021.jpg" alt="Training Floor"></div>
+    <img class="rv" src="IMG-20261121-WA0012.jpg" alt="Leg Press">
+    <img class="rv" src="IMG-20261121-WA0015.jpg" alt="Strength Area">
+    <img class="rv" src="IMG-20261121-WA0013.jpg" alt="Training Area">
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section id="plans">
+  <p class="tag">MEMBERSHIP</p>
+  <h2 class="title">MEMBERSHIP <span>PLANS</span></h2>
+  <div class="plans">
+    <div class="plan rv"><h3>3 MONTHS</h3><div class="price">₹8000</div>
+      <ul><li>Full Gym Access</li><li>Nutrition Chart</li><li>Exercise Chart</li></ul>
+      <a href="#" data-wa="Hi ABS Fitness, I want the 3 months plan" class="btn btn-o">JOIN NOW</a></div>
+    <div class="plan pop rv"><h3>6 MONTHS</h3><div class="price">₹10000</div>
+      <ul><li>Full Gym Access</li><li>Nutrition Chart</li><li>Exercise Chart</li></ul>
+      <a href="#" data-wa="Hi ABS Fitness, I want the 6 months plan" class="btn btn-y">JOIN NOW</a></div>
+    <div class="plan rv"><h3>1 YEAR</h3><div class="price">₹18000</div>
+      <ul><li>Full Gym Access</li><li>Nutrition Chart</li><li>Exercise Chart</li></ul>
+      <a href="#" data-wa="Hi ABS Fitness, I want the 1 year plan" class="btn btn-o">JOIN NOW</a></div>
+  </div>
+  <p class="note">Personal training, Zumba, Yoga aur CrossFit ke liye alag se pooche.</p>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>READY TO GET <span class="hl">STRONGER?</span></h2>
+  <p>Aaj hi ABS FITNESS join karo aur apni transformation shuru karo.</p>
+  <a href="#" data-wa="Hi ABS Fitness, I want to start my fitness journey" class="btn btn-y">START YOUR JOURNEY</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="tag">GET IN TOUCH</p>
+  <h2 class="title">CONTACT <span>US</span></h2>
+  <div class="contact">
+    <div>
+      <div class="c-box rv"><div class="ic">📍</div><div><h4>Location</h4><p>ABS FITNESS, Gorewada Ring Road,<br>Opposite Bombay Chicken, Teachers Colony,<br>Nagpur, Maharashtra – 440013</p></div></div>
+      <a href="#" data-wa="Hi ABS Fitness, I want to know more about the gym" class="c-box rv"><div class="ic">📞</div><div><h4>Contact / WhatsApp</h4><p data-phone>+91 92840 52415</p></div></a>
+      <a href="#" data-insta class="c-box rv"><div class="ic">📷</div><div><h4>Instagram</h4><p data-insta-text>@onefitness_gym_nagpur</p></div></a>
+      <div class="c-box rv"><div class="ic">🕐</div><div><h4>Timing</h4><p>Open 24 Hours<br>Every Day</p></div></div>
+      <div class="btns-row">
+        <a href="#" data-wa="Hi ABS Fitness, I want to join the gym" class="btn btn-wa">WHATSAPP</a>
+        <a href="#" data-insta class="btn btn-ig">INSTAGRAM</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=ABS+Fitness+Gorewada+Ring+Road+Nagpur+440013" target="_blank" rel="noopener" class="btn btn-o">DIRECTIONS</a>
+      </div>
+    </div>
+    <div class="map rv">
+      <iframe src="https://www.google.com/maps?q=ABS+Fitness+Gorewada+Ring+Road+Nagpur+440013&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="file_0000000089388211b43997f8ed700363.png" alt="ABS Fitness">
+  <div class="t">ABS FITNESS</div>
+  <p>Build Strength. Build Confidence. 💪</p>
+  <p>Gorewada Ring Road, Teachers Colony, Nagpur – 440013 • Open 24 Hours</p>
+  <div class="btns-row">
+    <a href="#" data-wa="Hi ABS Fitness" class="btn btn-wa">WHATSAPP</a>
+    <a href="#" data-insta class="btn btn-ig">INSTAGRAM</a>
+  </div>
+  <p>© 2026 ABS FITNESS. All rights reserved.</p>
+</footer>
+
+<a class="wa" href="#" data-wa="Hi ABS Fitness" aria-label="WhatsApp">💬</a>
+
+<div class="lb" id="lb"><span>&times;</span><img id="lbimg" src="" alt=""></div>
+
+<script>
+/* ================= SIRF YAHAN BADLO ================= */
+const CONFIG = {
+  phone:   "919284052415",         // country code ke saath, bina + ke
+  display: "+91 92840 52415",      // website par jaise dikhana hai
+  insta:   "onefitness_gym_nagpur" // bina @ ke Instagram username
+};
+
+/* TRAINERS: file = Spck me photo ka exact naam (photo na ho to null likho) */
+const TRAINERS = [
+  {name:"SHIVANI", file:"IMG_20261122_070103.jpg"},
+  {name:"SAURABH", file:"IMG_20261122_070034.jpg"},
+  {name:"MANGESH", file:"IMG_20261122_070002.jpg"},
+  {name:"NITIN",   file:"IMG_20261122_070020.jpg"},
+  {name:"PREM",    file:"IMG_20261122_065944.jpg"},
+  {name:"KUNAL",   file:null}
+];
+/* ==================================================== */
+
+// Trainers cards banao
+const grid=document.getElementById('trGrid');
+TRAINERS.forEach(t=>{
+  const c=document.createElement('div');
+  c.className='tr-card rv';
+  c.innerHTML='<div class="ph"></div>'+
+    '<div class="info"><h3>'+t.name+'</h3><div class="role">Gym Trainer</div></div>';
+  const ph=c.querySelector('.ph');
+  if(t.file){
+    const img=document.createElement('img');
+    img.alt=t.name;
+    img.onerror=()=>{ph.innerHTML='<div class="miss"><b>Photo nahi mili</b>'+t.file+'</div>'};
+    img.src=encodeURI(t.file);
+    ph.appendChild(img);
+  }else{
+    ph.innerHTML='<div class="initial">'+t.name.charAt(0)+'</div>';
+  }
+  grid.appendChild(c);
+});
+
+// WhatsApp links
+document.querySelectorAll('[data-wa]').forEach(a=>{
+  a.href='https://wa.me/'+CONFIG.phone+'?text='+encodeURIComponent(a.dataset.wa||'Hi ABS Fitness');
+  a.target='_blank'; a.rel='noopener';
+});
+// Instagram links
+document.querySelectorAll('[data-insta]').forEach(a=>{
+  a.href='https://www.instagram.com/'+CONFIG.insta+'/';
+  a.target='_blank'; a.rel='noopener';
+});
+document.querySelectorAll('[data-phone]').forEach(e=>e.textContent=CONFIG.display);
+document.querySelectorAll('[data-insta-text]').forEach(e=>e.textContent='@'+CONFIG.insta);
+
+// Navbar scroll effect
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>50));
+
+// Mobile menu
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.onclick=()=>menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+
+// Scroll reveal (trainers cards bhi isme aate hain)
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// Gallery lightbox
+const lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg');
+document.querySelectorAll('.gal img').forEach(i=>i.onclick=()=>{
+  lbimg.src=i.src;
+  lbimg.className=i.parentElement.classList.contains('rotbox')?'r':'';
+  lb.classList.add('on');
+});
+lb.onclick=()=>lb.classList.remove('on');
+</script>
+</body>
+  </html>
